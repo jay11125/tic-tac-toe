@@ -1,0 +1,76 @@
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.heading{ 
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(65, 201, 65);
+    margin-bottom: 10px;
+}
+.play_area{
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+.box{
+    font-family: 'Consolas', Courier, monospace;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:5px solid black;
+
+}
+#box1,#box2,#box3{
+    border-top: 0px;
+}
+#box1,#box4,#box7{
+    border-left: 0px;
+}
+#box7,#box8,#box9{
+    border-bottom: 0px;
+}
+#box9,#box3,#box6{
+    border-right: 0px;
+}
+button{
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: greenyellow;
+    border: 4px solid green;
+    
+}
+button:hover{
+    background-color: rgb(148, 194, 79);
+    box-shadow: 1px 1px;
+}
+.box:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+}
+#winner{
+     font-weight: bolder;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(230, 47, 47)
+}
+.done{
+     font-family: 'Consolas', Courier, monospace;
+    font-size: 100px;
+    font-weight:bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:5px solid black;
+    color:rgb(153, 255, 0);
+}
