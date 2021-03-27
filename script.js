@@ -2,7 +2,7 @@ var current_player = "O"
 var h = document.getElementById("winner");
 var box = document.getElementsByClassName("box");
 var x = Array.from(box);
-
+var g = 0;
 function check(player,a,b,c){
     if (x[a].innerText === player && x[b].innerText === player && x[c].innerText === player) {
         h.innerHTML = `Player ${player} wins!!!`;
@@ -10,7 +10,7 @@ function check(player,a,b,c){
         x[a].className="done"
         x[b].className = "done"
         x[c].className = "done"
-        return true
+        g=1;
     }
     
     
@@ -57,11 +57,10 @@ x.forEach(element => {
             check("O", 2, 4, 6)
             check("X", 2, 4, 6)
             
-            var y = x.every(i => i.innerHTML != "")
-            if(y===true){
-                if(check()!==true){
+            if (x.every(i => i.innerText != "")===true){
+               if(g===0){ 
                 h.innerHTML="DRAW!"
-                }
+               }
             }
         }
     }
