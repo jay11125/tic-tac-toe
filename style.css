@@ -5,14 +5,28 @@
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    animation-name: container;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    transform-origin: bottom;
 }
+@keyframes container{
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(30px); }
+    30%  { transform: scale(.9,1) translateY(-30px); }
+    50%  { transform: scale(1,1)    translateY(30px); }
+    100% { transform: scale(1,1)    translateY(0); }
+    }
 .heading{ 
     font-weight: bolder;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(65, 201, 65);
     margin-bottom: 10px;
+    
+    
 }
+
 .play_area{
     display:grid;
     grid-template-columns: 100px 100px 100px;
@@ -51,19 +65,28 @@ button{
     
 }
 button:hover{
-    background-color: rgb(148, 194, 79);
+    background-color: rgb(123, 221, 136);
     box-shadow: 1px 1px;
 }
 .box:hover{
     cursor: pointer;
-    background-color: greenyellow;
+    background-color:rgb(86, 233, 105);;
 }
-#winner{
+#winner{opacity: 0;
+    opacity: 1;
      font-weight: bolder;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(230, 47, 47)
+    color: rgb(230, 47, 47);
+    animation-name: winner;
+    animation-duration: 3s;
+
 }
+@keyframes winner{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 .done{
      font-family: 'Consolas', Courier, monospace;
     font-size: 100px;
@@ -73,4 +96,86 @@ button:hover{
     align-items: center;
     border:5px solid black;
     color:rgb(153, 255, 0);
+}
+
+#box1{
+    animation-name: box1;
+    animation-duration: .3s;
+    animation-delay: 0s;
+}
+@keyframes box1{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box2{
+    animation-name: box2;
+    animation-duration: .3s;
+    animation-delay: .1s;
+}
+@keyframes box2{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box3{
+    animation-name: box3;
+    animation-duration: .3s;
+    animation-delay: .2s;
+}
+@keyframes box3{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box6{
+    animation-name: box6;
+    animation-duration: .3s;
+    animation-delay: .3s;
+}
+@keyframes box6{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box5{
+    animation-name: box5;
+    animation-duration: .3s;
+    animation-delay: .4s;
+}
+@keyframes box5{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box4{
+    animation-name: box4;
+    animation-duration: .3s;
+    animation-delay: .5s;
+}
+@keyframes box4{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box7{
+    animation-name: box4;
+    animation-duration: .3s;
+    animation-delay: .6s;
+}
+@keyframes box7{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box8{
+    animation-name: box4;
+    animation-duration: .3s;
+    animation-delay: .7s;
+}
+@keyframes box8{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
+}
+#box9{
+    animation-name: box9;
+    animation-duration: .3s;
+    animation-delay: .8s;
+}
+@keyframes box9{
+    from{background-color: white;}
+    To{background-color: rgb(86, 233, 105);;}
 }

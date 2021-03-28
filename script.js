@@ -4,6 +4,7 @@ var box = document.getElementsByClassName("box");
 var x = Array.from(box);
 var g = 0;
 
+h.innerHTML="It is Player O's turn"
 
 function check(player,a,b,c){
     if (x[a].innerText === player && x[b].innerText === player && x[c].innerText === player) {
@@ -32,10 +33,10 @@ x.forEach(element => {
             }
         }
         if(current_player==="O"){
-            h.innerHTML="It is Player O's turn"
+            h.innerHTML=`It is Player O's turn`
         }
         else if(current_player==="X"){
-            h.innerHTML="It is Player X's turn"
+            h.innerHTML=`It is Player X's turn`
         }
         if (element.innerHTML !== null || element.innerHTML !== "") {
 
