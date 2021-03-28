@@ -3,7 +3,6 @@ var h = document.getElementById("winner");
 var box = document.getElementsByClassName("box");
 var x = Array.from(box);
 var g = 0;
-
 h.innerHTML="It is Player O's turn"
 
 function check(player,a,b,c){
