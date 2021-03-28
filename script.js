@@ -4,7 +4,6 @@ var box = document.getElementsByClassName("box");
 var x = Array.from(box);
 var g = 0;
 
-h.innerHTML="It is Player O's turn"
 
 function check(player,a,b,c){
     if (x[a].innerText === player && x[b].innerText === player && x[c].innerText === player) {
