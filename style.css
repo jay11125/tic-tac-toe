@@ -33,7 +33,7 @@
     grid-template-rows: 100px 100px 100px;
 }
 .box{
-    font-family: 'Consolas', Courier, monospace;
+    font-family: 'Arial', Courier, monospace;
     font-size: 50px;
     display: flex;
     justify-content: center;
@@ -75,7 +75,7 @@ button:hover{
     opacity: 1;
      font-weight: bolder;
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Consolas', Courier, monospace;
     color: rgb(230, 47, 47);
     animation-name: winner;
     animation-duration: 3s;
